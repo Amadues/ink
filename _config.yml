@@ -13,7 +13,7 @@ facebook:           "jhondoe"
 
 disqus_shortname:   "thinker3197"
 
-background:         "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1514908154451&di=672e68da6af7b167c72cc987c18f1601&imgtype=0&src=http%3A%2F%2Fg.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2F54fbb2fb43166d22a90167b94d2309f79052d2ad.jpg"
+background:         "http://i0.hdslb.com/bfs/archive/cd84bb7e7c299d82c3bf3ef64a9dc4f2a764c2a5.jpg"
 
 paginate:           5
 paginate_path:      "/page:num/"
