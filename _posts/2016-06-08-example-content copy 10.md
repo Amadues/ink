@@ -8,153 +8,164 @@ author:       "Amadues"
 
 ============
 
-Paragraphs are separated by a blank line.
+iPhoneX 取消了物理按键，改成底部小黑条，这一改动导致网页出现了比较尴尬的屏幕适配问题。对于网页而言，顶部（刘海部位）的适配问题浏览器已经做了处理，所以我们只需要关注底部与小黑条的适配问题即可（即常见的吸底导航、返回顶部等各种相对底部 fixed 定位的元素）。笔者通过查阅了一些官方文档，以及结合实际项目中的一些处理经验，整理了一套简单的适配方案分享给大家，希望对大家有所帮助，
 
-2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
-look like:
-
-  * this one
-  * that one
-  * the other one
-
-Note that --- not considering the asterisk --- the actual text
-content starts at 4-columns in.
-
-> Block quotes are
-> written like so.
->
-> They can span multiple paragraphs,
-> if you like.
-
-Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
-in chapters 12--14"). Three dots ... will be converted to an ellipsis.
-Unicode is supported. ☺
+您可能感兴趣的相关文章
+网站开发中很有用的 jQuery 效果【附源码】
+分享35个让人惊讶的 CSS3 动画效果演示
+十分惊艳的8个 HTML5 & JavaScript 特效
+Web 开发中很实用的10个效果【源码下载】
+12款经典的白富美型 jQuery 图片轮播插件
+以下是处理前后效果图：
 
 
 
-An h2 header
-------------
+适配之前需要了解的几个新知识
+安全区域
+安全区域指的是一个可视窗口范围，处于安全区域的内容不受圆角（corners）、齐刘海（sensor housing）、小黑条（Home Indicator）影响，如下图蓝色区域：
 
-Here's a numbered list:
 
- 1. first item
- 2. second item
- 3. third item
 
-Note again how the actual text starts at 4 columns in (4 characters
-from the left side). Here's a code sample:
+也就是说，我们要做好适配，必须保证页面可视、可操作区域是在安全区域内。
 
-    # Let me re-iterate ...
-    for i in 1 .. 10 { do-something(i) }
+更详细说明，参考文档：Human Interface Guidelines - iPhoneX
 
-As you probably guessed, indented 4 spaces. By the way, instead of
-indenting the block, you can use delimited blocks, if you like:
+viewport-fit
+iOS11 新增特性，苹果公司为了适配 iPhoneX 对现有 viewport meta 标签的一个扩展，用于设置网页在可视窗口的布局方式，可设置三个值：
 
-~~~
-define foobar() {
-    print "Welcome to flavor country!";
+contain: 可视窗口完全包含网页内容（左图）
+cover：网页内容完全覆盖可视窗口（右图）
+auto：默认值，跟 contain 表现一致
+
+
+注意：网页默认不添加扩展的表现是 viewport-fit=contain，需要适配 iPhoneX 必须设置 viewport-fit=cover，这是适配的关键步骤。
+
+更详细说明，参考文档：viewport-fit-descriptor
+
+constant 函数
+iOS11 新增特性，Webkit 的一个 CSS 函数，用于设定安全区域与边界的距离，有四个预定义的变量：
+
+safe-area-inset-left：安全区域距离左边边界距离
+safe-area-inset-right：安全区域距离右边边界距离
+safe-area-inset-top：安全区域距离顶部边界距离
+safe-area-inset-bottom：安全区域距离底部边界距离
+这里我们只需要关注 safe-area-inset-bottom 这个变量，因为它对应的就是小黑条的高度（横竖屏时值不一样）。
+
+注意：当 viewport-fit=contain 时 constant 函数是不起作用的，必须要配合 viewport-fit=cover 使用。对于不支持 constant 的浏览器，浏览器将会忽略它。
+官方文档中提到 env 函数即将要替换 constant 函数，笔者测试过暂时还不可用。
+
+更详细说明，参考文档：Designing Websites for iPhone X
+
+如何适配
+了解了以上所说的几个知识点，接下来我们适配的思路就很清晰了。
+
+第一步：设置网页在可视窗口的布局方式
+新增 viweport-fit 属性，使得页面内容完全覆盖整个窗口：
+
+1
+<meta name="viewport" content="width=device-width, viewport-fit=cover">
+ 
+
+前面也有提到过，只有设置了 viewport-fit=cover，才能使用 constant 函数。
+
+第二步：页面主体内容限定在安全区域内
+这一步根据实际页面场景选择，如果不设置这个值，可能存在小黑条遮挡页面最底部内容的情况。
+
+1
+2
+3
+body {
+padding-bottom: constant(safe-area-inset-bottom);
 }
-~~~
+ 
 
-(which makes copying & pasting easier). You can optionally mark the
-delimited block for Pandoc to syntax highlight it:
-
-~~~python
-import time
-# Quick, count to ten!
-for i in range(10):
-    # (but not *too* quick)
-    time.sleep(0.5)
-    print i
-~~~
+第三步：fixed 元素的适配
+类型一：fixed 完全吸底元素（bottom = 0），比如下图这两种情况：
 
 
+可以通过加内边距 padding 扩展高度：
 
-### An h3 header ###
+1
+2
+3
+{
+padding-bottom: constant(safe-area-inset-bottom);
+}
+ 
 
-Now a nested list:
+或者通过计算函数 calc 覆盖原来高度：
 
- 1. First, get these ingredients:
+1
+2
+3
+{
+height: calc(60px(假设值) + constant(safe-area-inset-bottom));
+}
+ 
 
-      * carrots
-      * celery
-      * lentils
+注意，这个方案需要吸底条必须是有背景色的，因为扩展的部分背景是跟随外容器的，否则出现镂空情况。
 
- 2. Boil some water.
+还有一种方案就是，可以通过新增一个新的元素（空的颜色块，主要用于小黑条高度的占位），然后吸底元素可以不改变高度只需要调整位置，像这样：
 
- 3. Dump everything in the pot and follow
-    this algorithm:
+1
+2
+3
+{
+margin-bottom: constant(safe-area-inset-bottom);
+}
+空的颜色块：
 
-        find wooden spoon
-        uncover pot
-        stir
-        cover pot
-        balance wooden spoon precariously on pot handle
-        wait 10 minutes
-        goto first step (or shut off burner when done)
+1
+2
+3
+4
+5
+6
+7
+{
+position: fixed;
+bottom: 0;
+width: 100%;
+height: constant(safe-area-inset-bottom);
+background-color: #fff;
+}
+ 
 
-    Do not bump wooden spoon or it will fall.
+类型二：fixed 非完全吸底元素（bottom ≠ 0），比如 “返回顶部”、“侧边广告” 等
+像这种只是位置需要对应向上调整，可以仅通过外边距 margin 来处理：
 
-Notice again how text always lines up on 4-space indents (including
-that last line which continues item 3 above).
+1
+2
+3
+{
+margin-bottom: constant(safe-area-inset-bottom);
+}
+ 
 
-Here's a link to [a website](http://foo.bar), to a [local
-doc](local-doc.html), and to a [section heading in the current
-doc](#an-h2-header). Here's a footnote [^1].
+或者，你也可以通过计算函数 calc 覆盖原来 bottom 值：
 
-[^1]: Footnote text goes here.
+1
+2
+3
+{
+bottom: calc(50px(假设值) + constant(safe-area-inset-bottom));
+}
+ 
 
-Tables can look like this:
+别忘了使用 @supports
+写到这里，我们常见的两种类型的 fixed 元素适配方案已经了解了吧，但别忘了，一般我们只希望 iPhoneX 才需要新增适配样式，我们可以配合 @supports 这样编写样式：
 
-size  material      color
-----  ------------  ------------
-9     leather       brown
-10    hemp canvas   natural
-11    glass         transparent
+1
+2
+3
+4
+5
+@supports (bottom: constant(safe-area-inset-bottom)) {
+div {
+margin-bottom: constant(safe-area-inset-bottom);
+}
+}
+ 
 
-Table: Shoes, their sizes, and what they're made of
-
-(The above is the caption for the table.) Pandoc also supports
-multi-line tables:
-
---------  -----------------------
-keyword   text
---------  -----------------------
-red       Sunsets, apples, and
-          other red or reddish
-          things.
-
-green     Leaves, grass, frogs
-          and other things it's
-          not easy being.
---------  -----------------------
-
-A horizontal rule follows.
-
-***
-
-Here's a definition list:
-
-apples
-  : Good for making applesauce.
-oranges
-  : Citrus!
-tomatoes
-  : There's no "e" in tomatoe.
-
-Again, text is indented 4 spaces. (Put a blank line between each
-term/definition pair to spread things out more.)
-
-Here's a "line block":
-
-| Line one
-|   Line too
-| Line tree
-
-and images can be specified like so:
-
-![example image](http://placehold.it/800x250 "An exemplary image")
-
-
-And note that you can backslash-escape any punctuation characters
-which you wish to be displayed literally, ex.: \`foo\`, \*bar\*, etc.
+写在最后
+以上几种方案仅供参考，笔者认为，现阶段适配处理起来是有点折腾，但是至少能解决，具体需要根据页面实际场景，在不影响用户体验与操作的大前提下不断尝试与探索，才能更完美的适配。
