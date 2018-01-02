@@ -29,7 +29,7 @@ nav:
   - name:           "Download"
     href:           "/releases"
   - name:           "信息可视化作品"
-    href:           "/works"
+    href:           "/infovis"
 
 sass:
   style:            :compressed
