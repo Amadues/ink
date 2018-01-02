@@ -4,157 +4,116 @@ description:  "A short description of the page's content"
 image:        "http://placehold.it/400x200"
 author:       "Jhonathan"
 ---
+这里和搜集了前端开发者必备的20个在线工具和指南。新的一周，你需要计划学习新的东西或者能够提升你的能力。在平常的搜索中，我碰到过很多实用的工具，应用程序和参考文档，我把它们整理在下面这个列表。相信你会在这个列表中发现对你很有用的资料。
 
-An h1 header
-============
+您可能感兴趣的相关文章
+Web 前端开发人员和设计师必读文章集锦
+十个拥有丰富 UI 组件的 JavaScript 框架
+十款精心挑选的在线 CSS3 代码生成工具
+开发者必备的八个最佳云端集成开发环境
+2012年度最佳 Web 前端开发工具和框架
+ 
 
-Paragraphs are separated by a blank line.
+1. I want to use
+Based on data and features listed on Can I use, this app gives you the ability to select a number of front-end development features and get a percentage readout of the number of users worldwide that will see the features you choose.
 
-2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
-look like:
+I want to use
 
-  * this one
-  * that one
-  * the other one
+2. Regulex
+A client-side, regular expression visualizer with a precise error indicator, should you have a syntax error in your expression. Also offers an option to embed the output anywhere, using an iframe.
 
-Note that --- not considering the asterisk --- the actual text
-content starts at 4-columns in.
+Regulex
 
-> Block quotes are
-> written like so.
->
-> They can span multiple paragraphs,
-> if you like.
+3. Mastering the :nth-child
+A one-page website to help you grasp how to use the various useful but often complex nth-child based selector combinations.
 
-Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
-in chapters 12--14"). Three dots ... will be converted to an ellipsis.
-Unicode is supported. ☺
+Mastering the :nth-child
 
+4. HTML5 Video Events and API
+“This page demonstrates the new HTML5 video element, its media API, and the media events. Play, pause, and seek in the entire video, change the volume, mute, change the playback rate (including going into negative values). See the effect on the video and on the underlying events and properties.”
 
+HTML5 Video Events and API
 
-An h2 header
-------------
+5. Excess XSS
+This is probably a topic that all developers should be familiar with, and this might be a great place to start. It’s a comprehensive tutorial on cross-site scripting, a description of potential types of attacks, along with solutions for preventing them.
 
-Here's a numbered list:
+Excess XSS
 
- 1. first item
- 2. second item
- 3. third item
+6. RSCSS
+Meaning “Reasonable Standard for CSS Stylesheet Structure”, a work in progress to document some tips and techniques for writing Sass/CSS for very large projects.
 
-Note again how the actual text starts at 4 columns in (4 characters
-from the left side). Here's a code sample:
+RSCSS
 
-    # Let me re-iterate ...
-    for i in 1 .. 10 { do-something(i) }
+7. CodeFightClub
+“A project built by Andrew Hathaway with the aim to help fellow developers learn how to write their code in the nicest, most efficient and preferred way they can. To decide which code is the most preferred way, users can comment and vote against a fight for their favourite contender.” The site is divided into categories by programming languages, and there doesn’t seem to be a lot here yet, but you can help by adding to it and starting some “code fights”.
 
-As you probably guessed, indented 4 spaces. By the way, instead of
-indenting the block, you can use delimited blocks, if you like:
+CodeFightClub
 
-~~~
-define foobar() {
-    print "Welcome to flavor country!";
-}
-~~~
+8. Sass Guidelines
+From the Sass master himself, Hugo Giraudel, “an opinionated styleguide for writing sane, maintainable and scalable Sass.” The guide has already been translated into 6 other languages.
 
-(which makes copying & pasting easier). You can optionally mark the
-delimited block for Pandoc to syntax highlight it:
+Sass Guidelines
 
-~~~python
-import time
-# Quick, count to ten!
-for i in range(10):
-    # (but not *too* quick)
-    time.sleep(0.5)
-    print i
-~~~
+9. Flexbugs
+“A community-curated list of flexbox issues and cross-browser workarounds for them. The goal is that if you’re building a website using flexbox and something isn’t working as you’d expect, you can find the solution here.” Definitely a must-bookmark for those starting to build new layouts with Flexbox.
 
+Flexbugs
 
+10. A Front End Engineer’s Manifesto
+Nothing too in-depth, just a simple set of reminders of stuff that all front-end developers should consider incorporating into their development process and workflow.
 
-### An h3 header ###
+A Front End Engineer's Manifesto
 
-Now a nested list:
+11. ECMAScript 6 equivalents in ES5
+A nice reference for converting ES6 features to ES5-compatible code. Very useful considering ES5 has great support but ES6 doesn’t.
 
- 1. First, get these ingredients:
+ECMAScript 6 equivalents in ES5
 
-      * carrots
-      * celery
-      * lentils
+12. Flexbox Adventures
+An in-depth, practical look at Flexbox, from Aussie-based developer Chris Wright. He’s also posted Using Flexbox Today, which tries to help you make the move to Flexbox in a logical, pragmatic manner.
 
- 2. Boil some water.
+Flexbox Adventures
 
- 3. Dump everything in the pot and follow
-    this algorithm:
+13. Get BEM
+A comprehensive site promoting and educating in the use of the popular BEM CSS methodology.
 
-        find wooden spoon
-        uncover pot
-        stir
-        cover pot
-        balance wooden spoon precariously on pot handle
-        wait 10 minutes
-        goto first step (or shut off burner when done)
+Get BEM
 
-    Do not bump wooden spoon or it will fall.
+14. Sass Compatibility
+“Reporting incompatibilities between different Sass engines.”
 
-Notice again how text always lines up on 4-space indents (including
-that last line which continues item 3 above).
+Sass Compatibility
 
-Here's a link to [a website](http://foo.bar), to a [local
-doc](local-doc.html), and to a [section heading in the current
-doc](#an-h2-header). Here's a footnote [^1].
+15. HTMLelement.info
+A neat, logical, easy to use guide to get information on different HTML elements from the spec.
 
-[^1]: Footnote text goes here.
+HTMLelement.info
 
-Tables can look like this:
+16. JSLint Error Explanations
+If you’re like me, you probably follow a lot of JavaScript best practices, but maybe don’t understand all the reasons behind those techniques. This site aims to demystify the errors and warnings you find in the popular linting tools JSLint, JSHint, and ESLint.
 
-size  material      color
-----  ------------  ------------
-9     leather       brown
-10    hemp canvas   natural
-11    glass         transparent
+JSLint Error Explanations
 
-Table: Shoes, their sizes, and what they're made of
+17. Animations — Web Fundamentals
+There’s lots of good info in Google’s Web Fundamentals documentation, but this one stands out for front-end devs in particular because of the importance of applying some good practices when animating UI elements.
 
-(The above is the caption for the table.) Pandoc also supports
-multi-line tables:
+Animations — Web Fundamentals
 
---------  -----------------------
-keyword   text
---------  -----------------------
-red       Sunsets, apples, and
-          other red or reddish
-          things.
+18. Favicon Cheat Sheet
+“A painfully obsessive cheat sheet to favicon sizes/types.” Compiled from a number of different popular articles that discussed the ins and outs of favicons across desktop and mobile.
 
-green     Leaves, grass, frogs
-          and other things it's
-          not easy being.
---------  -----------------------
+Favicon Cheat Sheet
 
-A horizontal rule follows.
+19. The CSS at…
+If you want your fill of CSS styleguides from some of the big players, Chris Coyier has put together a table with info and links to the various posts that were sort of trending for a couple of months last year. I’m sure he’ll continue to update this as others go public with their CSS methodologies and practices.
 
-***
+The CSS at...
 
-Here's a definition list:
+20. Dash
+Finally, a native Mac or iOS app that is “an API Documentation Browser and Code Snippet Manager. Dash stores snippets of code and instantly searches offline documentation sets for 150+ APIs.” This one’s great for pretty much any kind of developer.
 
-apples
-  : Good for making applesauce.
-oranges
-  : Citrus!
-tomatoes
-  : There's no "e" in tomatoe.
+Dash
 
-Again, text is indented 4 spaces. (Put a blank line between each
-term/definition pair to spread things out more.)
+ 
 
-Here's a "line block":
-
-| Line one
-|   Line too
-| Line tree
-
-and images can be specified like so:
-
-![example image](http://placehold.it/800x250 "An exemplary image")
-
-
-And note that you can backslash-escape any punctuation characters
-which you wish to be displayed literally, ex.: \`foo\`, \*bar\*, etc.
+ 
