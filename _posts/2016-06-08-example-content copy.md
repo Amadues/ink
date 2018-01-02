@@ -1,5 +1,5 @@
 ---
-title:        "Sample Post"
+title:        "前端开发者必备的20个在线工具和指南"
 description:  "A short description of the page's content"
 image:        "http://placehold.it/400x200"
 author:       "Jhonathan"
