@@ -1,160 +1,84 @@
 ---
-title:        "Sample Post"
+title:        "媒介融合/媒体融合/全媒体 Media convergence"
 description:  "A short description of the page's content"
 image:        "http://placehold.it/400x200"
 author:       "Jhonathan"
 ---
+介融合指汇集计算(computing)，传播(communication)和内容(content) 三个C，是互联网普及内容数字化直接产出的社会科技现象，带来了各方面的变局与机遇。(Flew, 2017)
 
-An h1 header
-============
+随着万维网WWW丶智能手机丶智能电视丶等数字设备的科技发展，数以十亿的人们现在可以获取媒体内容，而不再仅限於传统绑定的媒体（如纸媒或广播）或平台（纸本新闻丶纸本杂志丶电台广播丶电视丶电影院）。
 
-Paragraphs are separated by a blank line.
+媒介融合指计算丶传播丶和内容汇集的社会与科技现象，对媒体组织及新闻实践带来变革，而随着行业并购及社交媒体的发展，催生出跨媒体讲故事及媒介融合政策的新议题。
 
-2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
-look like:
+科技融合 Technological Convergence
+对媒体组织的变革
+互联网普及内容数字化，媒体组织不再如从前一样只印报或广播电视节目，而是能把内容以文本丶视频丶播客丶网页超链结丶内容数据库丶等提供给受众使用。媒体组织还能让用户针对特定内容做评论甚或提供额外超链结及其他内容。
 
-  * this one
-  * that one
-  * the other one
+对新闻学及实践的变革
+网新媒体让科技融合成为可能，对传统新闻学及实践产生变革。科技融合改变新闻中以下的界线：记者与非记者的界线（如公民新闻）丶截稿期限的有无丶记者与编辑的界线丶及平台之间的界线。美国新闻学教授简.辛格（Jane Singer）认为，以前一度封闭的报纸新闻，在今天的新闻界则是（在网新媒体环境下）一直存在、开放的文本。
 
-Note that --- not considering the asterisk --- the actual text
-content starts at 4-columns in.
+融合新闻学 (convergence journalism) 的产生，根據卡丽·安娜·施里亚杜 (Carrie Anna Criado) 和卡米尔·克列普林 (Camille Kraeplin) 两位教授对全美的新闻传播业及新闻院校媒体融合发展程度进行调查研究的结论主要有 (宋昭勋, 2006) :
 
-> Block quotes are
-> written like so.
->
-> They can span multiple paragraphs,
-> if you like.
+传媒组织和新闻教育工作者均普遍认为媒体融合对于新闻传播业的未来发展十分重要。
+他们所调查的报纸和电视台中 , 绝大多数进行了传媒战术性联合 , 相互分享新闻及人力资源。
+大学的新闻课程也开始走向融合 , 因为融合新闻技能培训已显得十分重要和必要 , 跨平台传播训练已经或即将纳入课程规划。
+以前，通常记者学习一种媒体的技能作为终生职业。然而，21 世纪的记者若有跨媒体传播技巧训练，則成为具备多形式写作传播能力的融合记者 (convergence journalist) 。
 
-Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
-in chapters 12--14"). Three dots ... will be converted to an ellipsis.
-Unicode is supported. ☺
+行业并购 Industry Mergers
+以上的科技融合在史上也与媒体行业并购相逢，也逢新媒体巨型公司的兴起。
 
+美国1990年至2000年代，大媒体公司展开跨媒体的集团并购，着名的有
 
+Viacom-Paramount (1994) 维亚康姆 与 派拉蒙（1994年）
 
-An h2 header
-------------
+Disney-ABC (1995) 迪斯尼 与 ABC
 
-Here's a numbered list:
+Viacom-CBS (2000) 维亚康姆 与 CBS
 
- 1. first item
- 2. second item
- 3. third item
+America On Line (AOL) and Time Warner (2000) 美国在线（AOL）与时代华纳
 
-Note again how the actual text starts at 4 columns in (4 characters
-from the left side). Here's a code sample:
+NBC-Universal (2004) NBC 与 环球
 
-    # Let me re-iterate ...
-    for i in 1 .. 10 { do-something(i) }
+（美国在线 与 时代华纳 并购案是当时全美史上规模最大的企业并购案）
 
-As you probably guessed, indented 4 spaces. By the way, instead of
-indenting the block, you can use delimited blocks, if you like:
+根据协同效应（synergies）的逻辑，这些在上世纪90年代末这些并购案是说得通的，因为协同效应的意思是在跨平台的媒体组织，实质上大于其组成部分的总和。然而，在2000的美国科技泡沫破裂后，随着纳斯达克的崩溃，合并后的实体之间的文化差异，显然比最初想象的还要难以克服。例如，美国在线与时代华纳的合并失败了，到了2009，AOL被悄悄拆分为一家独立的上市公司，其价值远比并购时的估值小。
 
-~~~
-define foobar() {
-    print "Welcome to flavor country!";
-}
-~~~
+社交媒体 Social Media
+在媒介融合领域，社交媒体是新驱动力。
 
-(which makes copying & pasting easier). You can optionally mark the
-delimited block for Pandoc to syntax highlight it:
+社交媒体一词指一套技术丶平台和服务，能让个人从事从一对一，一对多，多对多的传播。
 
-~~~python
-import time
-# Quick, count to ten!
-for i in range(10):
-    # (but not *too* quick)
-    time.sleep(0.5)
-    print i
-~~~
+虽说互联网始终允许个人用户参与媒体的生产，而不仅止於消费，媒介融合的社交方面的蓬勃发展，一直要到本世纪初随着Web 2.0网站兴起，使以用户为中心的丶用户持续参与的社交媒体生产及消费。
 
+美国媒体学者 Howard Rheingold 发现了社交媒体的三大核心特征。
 
+首先，社交媒体使网络中的每个人都可以同时生产丶分发和消费内容。
+第二，社交媒体的力量来自于它的用户之间的联系。
+第三，社交媒体允许用户能以超出先前认定是不可能的“规模”及“速度”，来协调他们之间的活动。
+用户创建内容（user-generated content）的崛起则是与媒介融合和社交媒体相关的一个重要转变，用户从受众转变为参与者。
 
-### An h3 header ###
+跨媒体讲故事 Transmedia Storytelling
+专业媒体组织面对媒介融合变革的方式之一是采用跨媒体讲故事，意思是在多平台上说同一类的故事。这和品牌（如星球大战丶哈利·波特丶各种迪士尼）在媒体上传播和特许经营关系密切。
 
-Now a nested list:
+然而，跨媒体讲故事不仅仅指把内容从一个平台改编到另一个平台（例如，把电影和电影角色改编为电玩基本素材）。正如西班牙媒体学者Carlos Scolari指出，跨媒体讲故事是一种特殊的叙事结构，涵括不同的语言（口头丶图标，等等）和不同的媒体（电影丶漫画丶电视丶视频游戏丶等等）。跨媒体讲故事除了让媒体公司能用品牌增加收入及受众，它更形成粉丝参与形式，当粉丝们把围绕故事元素产出更丰富丶更复杂的叙事。
 
- 1. First, get these ingredients:
+媒介融合政策 Media Convergence Policy
+媒体融合也给媒体政策带来新挑战。20世纪中，媒体内容多是以通过特定的媒介发布的，如书籍丶报纸丶杂志丶广播丶电视丶电影和视频游戏。这些不同的媒体受到不同程度的监管，监管高低程度通常基于它们是在公共场所发布还是在私人消费中丶儿童是否可以访问内容丶特定媒体是否会对受众产生更大影响，等等因素来考量进而制定监管政策。
 
-      * carrots
-      * celery
-      * lentils
+在21世纪，内容和平台已经分离，用户现在可以在多种设备上以数字形式访问内容。此外，如前所述，用户本身不再仅是内容的消费者，而是扮演越来越多的生产者和传销者的角色。因此，媒体政策和监管的环境发生了根本性的变化，因为用户控制自己的媒体环境变得更容易，而年轻的用户（“数字本地人” digital natives）通常是最熟悉媒体融合技术的群体。
 
- 2. Boil some water.
+媒介融合在中国 Media Convergence in China
+在中国，媒介融合的概念早期多以“全媒体”的概念流行，如周洋则认为“全媒体”的概念“是媒体走向融合后“跨媒介”的产物。”(罗鑫, 2010)
 
- 3. Dump everything in the pot and follow
-    this algorithm:
+参考文献
+Flew, T. (2017, 八月 17). Media convergence. 收入 Britannica.com. Encyclopædia Britannica, inc. 取读于 从 https://www.britannica.com/topic/media-convergence
+宋昭勋. (2006). 新闻传播学中Convergence一词溯源及内涵. 现代传播-中国传媒大学学报, (1), 51–53.
+罗鑫. (2010). 什么是“全媒体”. 中国记者, (3), 82–83.
 
-        find wooden spoon
-        uncover pot
-        stir
-        cover pot
-        balance wooden spoon precariously on pot handle
-        wait 10 minutes
-        goto first step (or shut off burner when done)
-
-    Do not bump wooden spoon or it will fall.
-
-Notice again how text always lines up on 4-space indents (including
-that last line which continues item 3 above).
-
-Here's a link to [a website](http://foo.bar), to a [local
-doc](local-doc.html), and to a [section heading in the current
-doc](#an-h2-header). Here's a footnote [^1].
-
-[^1]: Footnote text goes here.
-
-Tables can look like this:
-
-size  material      color
-----  ------------  ------------
-9     leather       brown
-10    hemp canvas   natural
-11    glass         transparent
-
-Table: Shoes, their sizes, and what they're made of
-
-(The above is the caption for the table.) Pandoc also supports
-multi-line tables:
-
---------  -----------------------
-keyword   text
---------  -----------------------
-red       Sunsets, apples, and
-          other red or reddish
-          things.
-
-green     Leaves, grass, frogs
-          and other things it's
-          not easy being.
---------  -----------------------
-
-A horizontal rule follows.
-
-***
-
-Here's a definition list:
-
-apples
-  : Good for making applesauce.
-oranges
-  : Citrus!
-tomatoes
-  : There's no "e" in tomatoe.
-
-Again, text is indented 4 spaces. (Put a blank line between each
-term/definition pair to spread things out more.)
-
-Here's a "line block":
-
-| Line one
-|   Line too
-| Line tree
-
-and images can be specified like so:
-
-![example image](http://placehold.it/800x250 "An exemplary image")
+作者：hantengliao
+链接：https://www.jianshu.com/p/fa4f07dcb669
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+ 
 
 
-And note that you can backslash-escape any punctuation characters
-which you wish to be displayed literally, ex.: \`foo\`, \*bar\*, etc.
