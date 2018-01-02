@@ -1,160 +1,78 @@
 ---
-title:        "Sample Post"
+title:        "给你推荐10款优秀的 HTML5 动画工具"
 description:  "A short description of the page's content"
 image:        "http://placehold.it/400x200"
 author:       "Jhonathan"
 ---
+HTML5 在过去三年快速增长，已经成为 Web 开发人员最喜欢的编程语言之一。强大的编程语言拥有开发更好的网页应用的能力。 HTML5 中引入的新技术都非常好，像 Chrome、Firefox、Safari 等许多现代浏览器都已经支持。今天，我们列出了10个优秀的 HTML5 动画制作工具，可以帮助你的工作。
 
-An h1 header
-============
+您可能感兴趣的相关文章
+Web 前端开发人员和设计师必读精华文章推荐
+精心挑选的优秀jQuery Ajax分页插件和教程
+12个让人惊叹的的创意的 404 错误页面设计
+让网站动起来！12款优秀的 jQuery 动画插件
+8个前沿 HTML5 & CSS3 效果【附源码下载】
+ 
 
-Paragraphs are separated by a blank line.
+1. Createjs:
 
-2nd paragraph. *Italic*, **bold**, and `monospace`. Itemized lists
-look like:
+html5-animation-tools-for-designers10
 
-  * this one
-  * that one
-  * the other one
+Createjs is a JavaScript library for working with HTML5 Canvas Element. The tool is best known for creating games, generative art and other graphical tools. It provides great graphical experience.
 
-Note that --- not considering the asterisk --- the actual text
-content starts at 4-columns in.
+2. Animatron:
 
-> Block quotes are
-> written like so.
->
-> They can span multiple paragraphs,
-> if you like.
+html5-animation-tools-for-designers2
 
-Use 3 dashes for an em-dash. Use 2 dashes for ranges (ex., "it's all
-in chapters 12--14"). Three dots ... will be converted to an ellipsis.
-Unicode is supported. ☺
+Animatron is an intuitive design and publishing editor software. You can use Animatron to design content like banners, infographic, creative animations for desktop computer, mobile device and anything of your choice. 
 
+3. Tumult Hype:
 
+html5-animation-tools-for-designers3
 
-An h2 header
-------------
+You can use Tumult Hype to create beautiful HTML5 web content. The content created using Tumult is interactive and has great animation capabilities. You can use this framework from desktop, smartphone and ipads. It doesn’t require to have coding knowledge.
 
-Here's a numbered list:
+4. Mugeda:
 
- 1. first item
- 2. second item
- 3. third item
+html5-animation-tools-for-designers4
 
-Note again how the actual text starts at 4 columns in (4 characters
-from the left side). Here's a code sample:
+Mugeda is preferred by many authoring toolkit, advertisers and agencies to unleash their creativity and to create best quality media ad units. The tool is best known for its abilities to create great quality ad units, banners, interstitials, expandable and mini games.
 
-    # Let me re-iterate ...
-    for i in 1 .. 10 { do-something(i) }
+5. HTML5 Maker:
 
-As you probably guessed, indented 4 spaces. By the way, instead of
-indenting the block, you can use delimited blocks, if you like:
+html5-animation-tools-for-designers5
 
-~~~
-define foobar() {
-    print "Welcome to flavor country!";
-}
-~~~
+HTML5 Maker is popular tool used for building sliders, banners and impressive graphics with minimum efforts. The tool is available for free. It doesn’t require you to have any special programming knowledge.
 
-(which makes copying & pasting easier). You can optionally mark the
-delimited block for Pandoc to syntax highlight it:
+6. Hippo Studios:
 
-~~~python
-import time
-# Quick, count to ten!
-for i in range(10):
-    # (but not *too* quick)
-    time.sleep(0.5)
-    print i
-~~~
+html5-animation-tools-for-designers6
 
+Hippo Studios is a great platform for creating powerful animation, games, presentations, apps and multimedia websites. The projects created using Hippo are support by most browsers and devices.
 
+7. Sencha:
 
-### An h3 header ###
+html5-animation-tools-for-designers7
 
-Now a nested list:
+Sencha Space is a secure application environment for HTML and JavaScript based applications. The tool helps in organization to simplify application development, security, maintenance and deployment to desktop, tablets and smartphones. The tool is best known for its security features.
 
- 1. First, get these ingredients:
+8. blysk:
 
-      * carrots
-      * celery
-      * lentils
+html5-animation-tools-for-designers8
 
- 2. Boil some water.
+blysk is very useful animation tool. It provides a great platform for animation and web designers for building intuitive animation for websites and other internet projects.
 
- 3. Dump everything in the pot and follow
-    this algorithm:
+9. Radiapp:
 
-        find wooden spoon
-        uncover pot
-        stir
-        cover pot
-        balance wooden spoon precariously on pot handle
-        wait 10 minutes
-        goto first step (or shut off burner when done)
+html5-animation-tools-for-designers9
 
-    Do not bump wooden spoon or it will fall.
+Radi is a powerful tool for animation. It is most commonly used for creating of runtime video and graphics. It provides realtime graphics editing interface for modern websites.
 
-Notice again how text always lines up on 4-space indents (including
-that last line which continues item 3 above).
+10. Mixeek:
 
-Here's a link to [a website](http://foo.bar), to a [local
-doc](local-doc.html), and to a [section heading in the current
-doc](#an-h2-header). Here's a footnote [^1].
+html5-animation-tools-for-designers1
 
-[^1]: Footnote text goes here.
-
-Tables can look like this:
-
-size  material      color
-----  ------------  ------------
-9     leather       brown
-10    hemp canvas   natural
-11    glass         transparent
-
-Table: Shoes, their sizes, and what they're made of
-
-(The above is the caption for the table.) Pandoc also supports
-multi-line tables:
-
---------  -----------------------
-keyword   text
---------  -----------------------
-red       Sunsets, apples, and
-          other red or reddish
-          things.
-
-green     Leaves, grass, frogs
-          and other things it's
-          not easy being.
---------  -----------------------
-
-A horizontal rule follows.
-
-***
-
-Here's a definition list:
-
-apples
-  : Good for making applesauce.
-oranges
-  : Citrus!
-tomatoes
-  : There's no "e" in tomatoe.
-
-Again, text is indented 4 spaces. (Put a blank line between each
-term/definition pair to spread things out more.)
-
-Here's a "line block":
-
-| Line one
-|   Line too
-| Line tree
-
-and images can be specified like so:
-
-![example image](http://placehold.it/800x250 "An exemplary image")
+Mixeek is a free software tool that can be used for designing and interactive web animation. The tool is based on JavaScript, CSS3 and HTML5. Mixeek was developed to bring lightweight and easy to use alternative for paid animation tools.
+ 
 
 
-And note that you can backslash-escape any punctuation characters
-which you wish to be displayed literally, ex.: \`foo\`, \*bar\*, etc.
