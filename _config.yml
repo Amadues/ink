@@ -24,10 +24,12 @@ permalink:          /:year/:month/:day/:title/
 markdown:           kramdown
 
 nav:
-  - name:           "About"
+  - name:           "WEB笔记"
     href:           "/about"
   - name:           "Download"
     href:           "/releases"
+  - name:           "信息可视化作品"
+    href:           "/works"
 
 sass:
   style:            :compressed
