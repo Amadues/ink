@@ -20,8 +20,10 @@ title: Markdown学习笔记
 代码区域内的文字不会被处理，按照原样输出。
 每一行前边加入4个空格或者一个tab可以标记一个代码段落：
 ![Mou icon](https://i.loli.net/2018/01/03/5a4c9c996e2d8.png)
+
 效果:
 ![Mou icon](https://i.loli.net/2018/01/03/5a4c9c996f9aa.png)
+
 还可以使用`内容`来标记行内代码
 ![Mou icon](https://i.loli.net/2018/01/03/5a4c9c9970e8f.png)
 ***
