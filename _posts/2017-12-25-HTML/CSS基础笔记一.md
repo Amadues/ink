@@ -12,7 +12,7 @@ author:       "Amadues"
  ***
  ## 2.认识标签
  让我们通过一个网页的学习，来对html标签有一个初步理解。平常大家说的上网就是浏览各种各式各样的网页，这些网页都是由html标签组成的。下面就是一个简单的网页。效果图如下：
- ![Mou icon](https://i.loli.net/2018/01/03/5a4ca401eb1f1.png)
+ ![Mou icon](https://i.loli.net/2018/01/03/5a4ca40252a71.png)
  我们来分析一下，这个网页由哪些html标签组成：
 
 “勇气”是网页内容文章的标题，<h1></h1>就是标题标签，它在网页上的代码写成<h1>勇气</h1>。
@@ -25,5 +25,5 @@ author:       "Amadues"
  ![Mou icon](https://i.loli.net/2018/01/03/5a4ca401f0805.png)
  总结一下，可以这么说，网页中每一个内容在浏览器中的显示，都要存放到各种标签中。
  代码示例：
-  ![Mou icon](https://i.loli.net/2018/01/03/5a4ca40252a71.png)
+  ![Mou icon](https://i.loli.net/2018/01/03/5a4ca401eb1f1.png)
 
